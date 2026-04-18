@@ -20,17 +20,17 @@ Because the cards and pages render from the same array, adding one object update
 
 ## How To Deploy To GitHub Pages
 
-1. Push the repository to GitHub.
+1. Keep the repository name as `aladadev.github.io`.
 2. Ensure your default branch is `main`.
 3. Commit and push your changes to `main`.
 4. GitHub Actions runs `.github/workflows/deploy.yml` on every push.
-5. The workflow installs dependencies from the repository root, builds a static export, and publishes `/out` to the `gh-pages` branch.
+5. The workflow installs dependencies from the repository root, builds a static export for the root URL, and publishes `/out` to the `gh-pages` branch.
 6. In GitHub repository settings, open `Pages`.
 7. Set the source to `Deploy from a branch`.
 8. Choose the `gh-pages` branch and the `/ (root)` folder.
-9. Save the settings and wait for the site URL to appear.
+9. Save the settings and wait for the site URL `https://aladadev.github.io/` to appear.
 
-The workflow automatically derives `NEXT_PUBLIC_BASE_PATH` so the site works for both `username.github.io` repositories and project repositories.
+This workflow is configured for a GitHub Pages user site, so it always builds with an empty base path and serves from the root URL.
 
 ## Folder Structure Explanation
 
