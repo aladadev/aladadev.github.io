@@ -1,0 +1,12 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Future Node.js tooling
+node_modules/
+dist/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
